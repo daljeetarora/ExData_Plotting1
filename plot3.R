@@ -11,7 +11,7 @@ comb <- paste(dt, time)
 
 date_time <- strptime(comb, format = "%Y-%m-%d %H:%M:%S")
 
-#png()
+png(filename = "plot3.png")
 
 ylab = "Energy sub metering"
 xlab = ""
@@ -26,4 +26,4 @@ lines(date_time, as.numeric(as.character(relvnt_datatable$Sub_metering_3)), type
 legend <- c(colnames(relvnt_datatable)[7], colnames(relvnt_datatable)[8], colnames(relvnt_datatable)[9])
 legend("topright", lty = 1, col = c("black", "red","blue"), legend = legend)
 
-#dev.off()
+dev.off()
