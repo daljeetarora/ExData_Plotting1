@@ -24,6 +24,6 @@ lines(date_time, as.numeric(as.character(relvnt_datatable$Sub_metering_3)), type
 
 #For Plot3 - Annotate
 legend <- c(colnames(relvnt_datatable)[7], colnames(relvnt_datatable)[8], colnames(relvnt_datatable)[9])
-legend("topright", pch = 5, col = c("black", "red","blue"), legend = legend)
+legend("topright", lty = 1, col = c("black", "red","blue"), legend = legend)
 
 #dev.off()
