@@ -9,4 +9,4 @@ relvnt_datatable <- datatable[datatable$Date == "1/2/2007" | datatable$Date == "
 xlab = "Global Active Power (kilowatts)"
 main = "Global Active Power"
 
-hist(as.numeric(as.character(relvnt_datatable$Global_active_power)), col = "red", xlab = xlab)
+hist(as.numeric(as.character(relvnt_datatable$Global_active_power)), col = "red", xlab = xlab, main = main)
