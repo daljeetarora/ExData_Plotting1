@@ -17,5 +17,8 @@ date_time <- strptime(comb, format = "%Y-%m-%d %H:%M:%S")
 ylab = "Global Active Power (kilowatts)"
 xlab = ""
 
+png(filename = "plot2.png")
+
 plot(date_time, as.numeric(as.character(relvnt_datatable$Global_active_power)), type = "l", xlab = xlab, ylab = ylab)
 
+dev.off()
