@@ -9,4 +9,9 @@ relvnt_datatable <- datatable[datatable$Date == "1/2/2007" | datatable$Date == "
 xlab = "Global Active Power (kilowatts)"
 main = "Global Active Power"
 
+#height & width - 480 pixels are by default
+png(filename = "plot1.png")
+
 hist(as.numeric(as.character(relvnt_datatable$Global_active_power)), col = "red", xlab = xlab, main = main)
+
+dev.off()
